@@ -4,7 +4,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'replace-this-with-a-secure-key'
 DEBUG = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '*',
+    'localhost',
+    '127.0.0.1',
+    'congenial-fiesta-x5xv5jvwv4fpv6g-8000.app.github.dev',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
