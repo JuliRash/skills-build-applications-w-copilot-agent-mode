@@ -39,12 +39,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "tracker",
-    "django.contrib.sites",
-    "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
-    "dj_rest_auth",
-    "dj_rest_auth.registration",
+    "octofit_tracker",
+    # "django.contrib.sites",  # Disabled due to djongo migration errors
+    # "allauth",
+    # "allauth.account",
+    # "allauth.socialaccount",
+    # "dj_rest_auth",
+    # "dj_rest_auth.registration",
     "corsheaders",
     "rest_framework.authtoken",
 ]
@@ -139,4 +140,4 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOW_ALL_ORIGINS = True
-SITE_ID = 1
+# SITE_ID = 1  # Not needed, sites framework is disabled
